@@ -1,9 +1,12 @@
 from re import A
-from pyrogram import Client, idle
+from pyrogram import Client, idle, filters
 from helpers.app_helpers import AppHelper
 
 
 class Client(Client, AppHelper):
+
+    filters = filters
+
     def run(self):
         self.start()
         self.init_bot_info()
