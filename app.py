@@ -1,6 +1,6 @@
 from os import getenv as env
 from dotenv import load_dotenv
-from pyrogram import Client
+from client import Client
 
 load_dotenv()
 
