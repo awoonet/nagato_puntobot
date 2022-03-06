@@ -12,4 +12,8 @@ telegram_credentials = dict(
     plugins={"root": "plugins"},
 )
 
-Client(**telegram_credentials).run()
+app = Client(**telegram_credentials)
+
+app.config_messages = env("CONFIG_MESSAGES")
+
+app.run()

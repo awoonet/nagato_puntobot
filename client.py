@@ -6,7 +6,7 @@ from helpers.app_helpers import AppHelper
 class Client(Client, AppHelper):
 
     filters = filters
-
+    
     def run(self):
         self.start()
         self.init_bot_info()
