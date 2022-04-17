@@ -53,7 +53,7 @@ class AppHelper:
             f"```Bot:      {self.bot.first_name}\n"
             f"Username: @{self.bot.username}\n"
             f"User ID:  {self.bot.id}\n\n"
-            f"{self.find_location()}\n"
+            f"{self.find_location()}"
             f"Time:     {time.strftime('%H:%M:%S %d/%m/%Y', time.localtime())}```"
         )
 
@@ -68,7 +68,7 @@ class AppHelper:
                     f"City:     {json['city']}\n"
                     f"Region:   {json['regionName']}\n"
                     f"Country:  {json['country']} {json['countryCode']}\n"
-                    f"IP:       {json['query']}\n"
+                    f"IP:       {json['query']}\n\n"
                 )
             except:
                 return ""
